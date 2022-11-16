@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 interface Componente {
-icon: string;
-name: string;
-redirectTo: string;
+  icon: string;
+  name: string;
+  redirectTo: string;
 }
 
 @Component({
@@ -19,9 +19,19 @@ export class InicioPage implements OnInit {
     redirectTo: '/action-sheet'
   },
   {
-    icon: 'logo-apple-appstore',
+    icon: 'alert-circle-outline',
     name: 'Alert',
     redirectTo: '/alert'
+  },
+  {
+    icon:'beaker-outline',
+    name: 'Avatar',
+    redirectTo: '/avatar'
+  },
+  {
+    icon:'radio-button-off-outline',
+    name: 'Buttons',
+    redirectTo: '/buttons'
   }];
 
   constructor() { }
