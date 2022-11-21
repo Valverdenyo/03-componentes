@@ -12,7 +12,7 @@ export class ListPage implements OnInit {
 
   usuarios: Observable<any> | undefined;
 
-  @ViewChild (IonList, {static: false}) ionlist:IonList;
+//  @ViewChild (IonList, {static: false}) ionlist:IonList; ERROR
 
   constructor(private dataService: DataService) { }
 
@@ -24,18 +24,18 @@ export class ListPage implements OnInit {
   favorite(user:any) {
 
     console.log(user);
-    this.ionlist.closeSlidingItems;
+ //   this.ionlist.closeSlidingItems;
   }
 
   share(user:any){
 
  console.log(user);
- this.ionlist.closeSlidingItems;
+ //this.ionlist.closeSlidingItems;
   }
 
   delete(user:any){
     console.log(user);
-    this.ionlist.closeSlidingItems;
+  //  this.ionlist.closeSlidingItems;
   }
 
   
