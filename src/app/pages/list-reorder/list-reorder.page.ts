@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemReorderEventDetail } from '@ionic/angular';
-import { DateTimePage } from '../date-time/date-time.page';
+
 
 @Component({
   selector: 'app-list-reorder',

@@ -12,7 +12,7 @@ export class ListPage implements OnInit {
 
   usuarios: Observable<any> | undefined;
 
-//  @ViewChild (IonList, {static: false}) ionlist:IonList; ERROR
+  @ViewChild(IonList) ionlist: IonList;  //NO VA
 
   constructor(private dataService: DataService) { }
 
@@ -21,22 +21,22 @@ export class ListPage implements OnInit {
     this.usuarios = this.dataService.getUsuarios();
   }
 
-  favorite(user:any) {
+  favorite(user: any) {
 
     console.log(user);
- //   this.ionlist.closeSlidingItems;
+    this.ionlist.closeSlidingItems;
   }
 
-  share(user:any){
+  share(user: any) {
 
- console.log(user);
- //this.ionlist.closeSlidingItems;
-  }
-
-  delete(user:any){
     console.log(user);
-  //  this.ionlist.closeSlidingItems;
+    this.ionlist.closeSlidingItems;
   }
 
-  
+  delete(user: any) {
+    console.log(user);
+    this.ionlist.closeSlidingItems;
+  }
+
+
 }
