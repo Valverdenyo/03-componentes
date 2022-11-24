@@ -78,5 +78,15 @@
       "icon":"tablet-portrait-outline",
       "name": "PopOver",
       "redirectTo": "/popover"
+    },
+    {
+      "icon":"battery-half-outline",
+      "name": "Progress",
+      "redirectTo": "/progress"
+    },
+    {
+      "icon":"arrow-down-circle-outline",
+      "name": "Refresher",
+      "redirectTo": "/refresher"
     }
   ]
