@@ -1,5 +1,8 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="primary"></ion-back-button>
+    </ion-buttons>
     <ion-title>search</ion-title>
   </ion-toolbar>
   <ion-searchbar
@@ -14,7 +17,7 @@
 <ion-content class="ion-padding">
 
 <ion-list>
-  <ion-item *ngFor="let album of albums">
+  <ion-item *ngFor="let album of albums | filtro: textoBuscar: 'title'">
     <ion-label>{{album.title}}</ion-label>
   </ion-item>
 </ion-list>
