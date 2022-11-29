@@ -11,7 +11,7 @@ export class SegmentPage implements OnInit {
 
   superHeroes: Observable<any>;
   segmento: string = '';
-
+  editor: string = '';
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
@@ -21,6 +21,18 @@ export class SegmentPage implements OnInit {
 
   segmentChanged(evento: any) {
     this.segmento = evento.detail.value;
+    if (this.segmento === 'todos') {
+      this.editor = '';
+      console.log(this.editor);
+    }
+    if (this.segmento === 'DC Comics') {
+      this.editor = this.segmento;
+      console.log(this.editor);
+    }
+    if (this.segmento === 'Marvel Comics') {
+      this.editor = this.segmento;
+      console.log(this.editor);
+    }
   }
 
 }

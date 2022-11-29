@@ -96,6 +96,10 @@ const routes: Routes = [
   {
     path: 'segment',
     loadChildren: () => import('./pages/segment/segment.module').then( m => m.SegmentPageModule)
+  },
+  {
+    path: 'swiper',
+    loadChildren: () => import('./pages/swiper/swiper.module').then( m => m.SwiperPageModule)
   }
 
 

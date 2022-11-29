@@ -4,21 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SegmentPageRoutingModule } from './segment-routing.module';
+import { SwiperPageRoutingModule } from './swiper-routing.module';
 
-import { SegmentPage } from './segment.page';
+import { SwiperPage } from './swiper.page';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { PipesModule } from 'src/app/pipes/pipes.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SegmentPageRoutingModule,
-    ComponentsModule,
-    PipesModule
+    SwiperPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [SegmentPage]
+  declarations: [SwiperPage]
 })
-export class SegmentPageModule {}
+export class SwiperPageModule {}
